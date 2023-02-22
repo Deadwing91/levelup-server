@@ -1,0 +1,24 @@
+[
+    {
+        "model": "levelupapi.game",
+        "pk": 1,
+        "fields" : {
+            "gamer": 1,
+            "gametype": 1,
+            "name": "Settlers of Catan",
+            "description": "Settlers of Catan is a strategy game involving smart resource management.",
+            "designer": "Klaus Teuber"
+        }
+    },
+    {
+        "model": "levelupapi.game",
+        "pk": 2,
+        "fields" : {
+            "gamer": 1,
+            "gametype": 2,
+            "name": "Dungeons and Dragons",
+            "description": "Dungeons & Dragons is a structured yet open-ended role-playing game.",
+            "designer": "Gary Gygax, Dave Arneson"
+        }
+    }
+]
