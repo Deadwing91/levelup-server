@@ -15,8 +15,8 @@ class GameTypeView(ViewSet):
         Returns:
             Response -- JSON serialized game type
         """
-        game_type = Game_Type.objects.get(pk=pk)
-        serializer = GameTypeSerializer(game_type)
+        gametype = Game_Type.objects.get(pk=pk)
+        serializer = GameTypeSerializer(gametype)
         return Response(serializer.data)
 
     def list(self, request):
@@ -25,8 +25,8 @@ class GameTypeView(ViewSet):
         Returns:
             Response -- JSON serialized list of game types
         """
-        game_types = Game_Type.objects.all()
-        serializer = GameTypeSerializer(game_types, many=True)
+        gametypes = Game_Type.objects.all()
+        serializer = GameTypeSerializer(gametypes, many=True)
         return Response(serializer.data)
     
 
